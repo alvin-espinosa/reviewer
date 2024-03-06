@@ -1,0 +1,17 @@
+To add new appsettings file,
+- right click in project name then add new item
+- search appsettings file 
+- appsetting.{environment}.json  -- environment = production, qa, staging
+
+
+To use other environment
+- go to Properties --> launchSettings.json
+- change ASPNETCORE_ENVIRONMENT
+
+
+User secrets is applicable only when the environment is development.
+User-Secrets
+- Tools -> Command line -> Developer Command Prompt
+- make sure directory is in project folder
+- to create UserSecretsId, use this script, 'dotnet user-secrets init'
+- go to edit project File to check UserSecretsId
