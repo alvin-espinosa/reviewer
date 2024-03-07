@@ -34,7 +34,7 @@ var app = builder.Build();
 
 builder.Host.ConfigureAppConfiguration(options => {
     options.Sources.Clear();
-    options.AddJsonFile($"appsettings.json", false, true);
+    options.AddJsonFile($"appsettings.json", true, true);
     options.AddJsonFile($"appsettings.{app.Environment.EnvironmentName}.json", false, true);
 });
 
